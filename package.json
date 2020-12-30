@@ -1,6 +1,7 @@
 {
   "name": "node-express",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,12 +13,11 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "handlebars": "^4.1.2",
-    "uuid": "^3.3.2",
-    "vue": "^2.6.12"
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.5.3",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.11"
-  },
-  "description": ""
+  }
 }
