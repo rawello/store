@@ -25,8 +25,9 @@ if ($card) {
               <tr>
                 <td>${c.title}</td>
                 <td>${c.count}</td>
+                <td>${c.price}</td>
                 <td>
-                  <button class="btn btm-small js-remove" data-id="${c.id}">Удалить</button>
+                  <button class="btn btm-small js-remove" data-id="${c._id}">Удалить</button>
                 </td>
               </tr>
               `

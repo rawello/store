@@ -63,4 +63,25 @@ userSchema.methods.addToCart = function (course) {
   return this.save();
 };
 
+userSchema.methods.removeFromCart = function (id) {
+  var items = _toConsumableArray(this.cart.items);
+
+  var idx = items.findIndex(function (c) {
+    return c.courseId.toString() === id.toString();
+  });
+
+  if (items[idx].count === 1) {
+    items = items.filter(function (c) {
+      return c.courseId.toString() !== id.toString();
+    });
+  } else {
+    items[idx].count--;
+  }
+
+  this.cart = {
+    items: items
+  };
+  return this.save();
+};
+
 module.exports = model('User', userSchema);
