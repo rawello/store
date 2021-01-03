@@ -16,6 +16,7 @@ var router = Router();
 function mapCartItems(cart) {
   return cart.items.map(function (c) {
     return _objectSpread({}, c.courseId._doc, {
+      id: c.courseId.id,
       count: c.count
     });
   });
