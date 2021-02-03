@@ -95,8 +95,8 @@ function start() {
           }
 
           user = new User({
-            email: 'vladilen@mail.ru',
-            name: 'Vladilen',
+            email: 'rawn@mail.ru',
+            name: 'Rawello',
             cart: {
               items: []
             }
