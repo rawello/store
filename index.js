@@ -43,7 +43,7 @@ const PORT = process.env.PORT || 3000
 
 async function start() {
   try {
-    const url = `mongodb+srv://rawello:admin@cluster0.d7mwa.mongodb.net/<dbname>?retryWrites=true&w=majority`
+    const url = `....`
     await mongoose.connect(url, {
       useNewUrlParser: true,
       useFindAndModify: false
@@ -51,7 +51,7 @@ async function start() {
     const candidate = await User.findOne()
     if (!candidate) {
       const user = new User({
-        email: 'rawn@mail.ru',
+        email: '...',
         name: 'Rawello',
         cart: {items: []}
       })
